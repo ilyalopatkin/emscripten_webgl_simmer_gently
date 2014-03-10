@@ -1,0 +1,36 @@
+﻿<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>WebGLTriangle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+        <script type='text/javascript' src='http://code.jquery.com/jquery-2.0.2.min.js'></script>
+        <script type='text/javascript' src='jquery.mousewheel.js'></script>
+        <link rel="stylesheet" href="styles/main.css">
+
+    </head>
+    <body>
+        <canvas class="topleft" id="canvas"></canvas>
+
+        <script type="text/javascript">
+            var canvas = document.getElementById("canvas");
+            //make the canvas fullscreen
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            //show Emscripten environment where the canvas is
+            var Module = {};
+            Module.canvas = canvas;
+        </script>
+
+        <script type="text/javascript" src="glcore.js"></script>
+        <script type="text/javascript" src="triangle.js"></script>
+
+        <script type="text/javascript">
+            var program = new TriangleExample.Program(canvas);
+        </script>
+
+    </body>
+</html>
