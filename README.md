@@ -1,7 +1,7 @@
 Native code + Emscripten + WebGL. Simmer gently.
 ===============================
 
-These are project files for a tutorial on integrating Emscripten-generated code into JS environment based on our experiments at Scott Logic.
+These are project files for a tutorial on integrating Emscripten-generated code into JS environment based on our experiments at [Scott Logic](http://www.scottlogic.com/).
 
 Build the project using
 
