@@ -9,4 +9,4 @@ Build the project using
             
 and open `index.html`
 
-For more information read the tutorial here: http://www.scottlogic.com/blog/2014/03/11/native-code-emscripten-webgl-simmer-gently.html
+For more information [read the tutorial](http://www.scottlogic.com/blog/2014/03/11/native-code-emscripten-webgl-simmer-gently.html) or simply [see live demo](http://ilyalopatkin.github.io/emscripten_webgl_simmer_gently/)
