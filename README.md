@@ -6,7 +6,8 @@ These are project files for a tutorial on integrating Emscripten-generated code 
 Build the project using
 
     make
-            
-and open `index.html`
+    python -m SimpleHTTPServer 8080
+
+and open `http://localhost:8080`
 
 For more information [read the tutorial](http://www.scottlogic.com/blog/2014/03/12/native-code-emscripten-webgl-simmer-gently.html) or simply [see live demo](http://ilyalopatkin.github.io/emscripten_webgl_simmer_gently/)

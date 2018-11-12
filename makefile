@@ -6,8 +6,8 @@ OUTPUT=glcore.js
 
 all: $(SOURCES) $(OUTPUT)
 
-$(OUTPUT): $(SOURCES) 
-	$(CC) $(SOURCES) --bind -s FULL_ES2=1 -s EXPORTED_FUNCTIONS=@$(EXPORTS_FILE) -std=c++11 $(LDFLAGS) -o $(OUTPUT)
+$(OUTPUT): $(SOURCES)
+	$(CC) $(SOURCES) --bind -s "EXTRA_EXPORTED_RUNTIME_METHODS=['ccall', 'cwrap', 'setValue']" -s FULL_ES2=1 -s EXPORTED_FUNCTIONS=@$(EXPORTS_FILE) -std=c++11 $(LDFLAGS) -o $(OUTPUT)
 
 clean:
 	rm $(OUTPUT)

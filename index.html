@@ -29,7 +29,16 @@
         <script type="text/javascript" src="triangle.js"></script>
 
         <script type="text/javascript">
-            var program = new TriangleExample.Program(canvas);
+            var start = function(){
+                if(Module.asm && Module.asm._initGL){
+                    var program = new TriangleExample.Program(canvas);
+                } else {
+                    console.log("Sleeping");
+                    setTimeout(start, 100);
+                }
+            }
+
+            start();
         </script>
 
     </body>
